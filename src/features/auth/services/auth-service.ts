@@ -64,7 +64,7 @@ export const authService = {
         //возвращаем объект с информацией в контроллер
         return {
             status: ResultStatus.Success,
-            //data: userId.id?.toString()
+            data: userId.id?.toString()
         }
     },
 

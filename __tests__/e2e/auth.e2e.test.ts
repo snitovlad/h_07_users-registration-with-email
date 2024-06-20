@@ -1,6 +1,6 @@
-import { clearTestDb, closeTestDb, connectToTestDb } from "./mongo-datasets"
-import { req } from './test-helpers';
-import { SETTINGS } from '../src/settings'
+import { clearTestDb, closeTestDb, connectToTestDb } from "../mongo-datasets"
+import { req } from '../test-helpers';
+import { SETTINGS } from '../../src/settings'
 import { createUser } from "./utils/createUsers";
 
 describe('/auth', () => {

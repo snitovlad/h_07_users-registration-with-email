@@ -1,6 +1,6 @@
-import { clearTestDb, closeTestDb, connectToTestDb } from "./mongo-datasets"
-import { req } from './test-helpers';
-import { SETTINGS } from '../src/settings'
+import { clearTestDb, closeTestDb, connectToTestDb } from "../mongo-datasets"
+import { req } from '../test-helpers';
+import { SETTINGS } from '../../src/settings'
 import { accessOtherToken, accessToken, createUser } from "./utils/createUsers";
 import { createBlog } from "./utils/createBlogs";
 import { createPost } from "./utils/createPosts";
@@ -14,7 +14,6 @@ describe('/auth', () => {
     beforeAll(async () => {
         await connectToTestDb()
         // await req.delete('/testing/all-data')
-
     })
     beforeEach(async () => {
         await clearTestDb()

@@ -1,6 +1,6 @@
-import { SETTINGS } from "../../src/settings"
-import { req } from '../test-helpers';
-import { CommentViewModel } from "../../src/features/comments/models/CommentViewModel";
+import { CommentViewModel } from "../../../src/features/comments/models/CommentViewModel"
+import { SETTINGS } from "../../../src/settings"
+import { req } from "../../test-helpers"
 
 export const createComment = async (token: string, postId: string): Promise<CommentViewModel> => {
     //const token = await accessToken()

@@ -1,10 +1,10 @@
-import { req } from './test-helpers';
-import { SETTINGS } from '../src/settings'
+import { req } from '../test-helpers';
+import { SETTINGS } from '../../src/settings'
 
-import { clearTestDb, closeTestDb, connectToTestDb, createNewBlog, createNewBlog2, createNewEntity, createNewPost, createNewPostForBlog } from './mongo-datasets';
+import { clearTestDb, closeTestDb, connectToTestDb, createNewBlog, createNewBlog2, createNewEntity, createNewPost, createNewPostForBlog } from '../mongo-datasets';
 import { ObjectId } from 'mongodb';
-import { CreateBlogModel } from '../src/features/blogs/models/CreateBlogModel';
-import { UpdateBlogModel } from '../src/features/blogs/models/UpdateBlogModel';
+import { CreateBlogModel } from '../../src/features/blogs/models/CreateBlogModel';
+import { UpdateBlogModel } from '../../src/features/blogs/models/UpdateBlogModel';
 
 
 describe('/blogs', () => {

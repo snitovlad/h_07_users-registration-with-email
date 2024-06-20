@@ -1,9 +1,9 @@
-import { req } from './test-helpers'
-import { SETTINGS } from '../src/settings'
-import { clearTestDb, closeTestDb, connectToTestDb, createNewBlog, createNewEntity, createNewPost, createNewPost2 } from './mongo-datasets'
+import { req } from '../test-helpers'
+import { SETTINGS } from '../../src/settings'
+import { clearTestDb, closeTestDb, connectToTestDb, createNewBlog, createNewEntity, createNewPost, createNewPost2 } from '../mongo-datasets'
 import { ObjectId } from 'mongodb'
-import { CreatePostModel } from '../src/features/posts/models/CreatePostModel'
-import { UpdatePostModel } from '../src/features/posts/models/UpdatePostModel'
+import { CreatePostModel } from '../../src/features/posts/models/CreatePostModel'
+import { UpdatePostModel } from '../../src/features/posts/models/UpdatePostModel'
 
 
 

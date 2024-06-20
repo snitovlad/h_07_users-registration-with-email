@@ -1,6 +1,6 @@
-import { UserViewModel } from "../../src/features/users/users-model/UserViewModel";
-import { SETTINGS } from "../../src/settings"
-import { req } from '../test-helpers';
+import { UserViewModel } from "../../../src/features/users/users-model/UserViewModel"
+import { SETTINGS } from "../../../src/settings"
+import { req } from "../../test-helpers"
 
 export const createUser = async () => {
     const res = await req

@@ -1,6 +1,7 @@
-import { PostViewModel } from "../../src/features/posts/models/PostViewModel";
-import { SETTINGS } from "../../src/settings"
-import { req } from '../test-helpers';
+import { PostViewModel } from "../../../src/features/posts/models/PostViewModel"
+import { SETTINGS } from "../../../src/settings"
+import { req } from "../../test-helpers"
+
 
 export const createPost = async (blogId: string): Promise<PostViewModel> => {
     const res = await req

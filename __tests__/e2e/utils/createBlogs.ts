@@ -1,6 +1,6 @@
-import { BlogViewModel } from "../../src/features/blogs/models/BlogViewModel";
-import { SETTINGS } from "../../src/settings"
-import { req } from '../test-helpers';
+import { BlogViewModel } from "../../../src/features/blogs/models/BlogViewModel";
+import { SETTINGS } from "../../../src/settings"
+import { req } from '../../test-helpers';
 
 export const createBlog = async (): Promise<BlogViewModel> => {
     const res = await req

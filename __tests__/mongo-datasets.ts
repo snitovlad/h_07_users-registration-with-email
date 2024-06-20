@@ -1,10 +1,10 @@
 import { MongoMemoryServer } from 'mongodb-memory-server'
-import { blogCollection, client, connectToDB, postCollection, userCollection } from "../src/db/mongo-db"
+import { blogCollection, client, commentCollection, connectToDB, postCollection, userCollection } from "../src/db/mongo-db"
 import { SETTINGS } from "../src/settings"
-import { req } from "./test-helpers"
 import { CreatePostModel } from "../src/features/posts/models/CreatePostModel"
 import { CreateUserModel } from '../src/features/users/users-model/CreateUseerModel';
 import { CreateBlogModel } from '../src/features/blogs/models/CreateBlogModel'
+import { req } from './test-helpers';
 
 
 let testServer: MongoMemoryServer
@@ -27,6 +27,7 @@ export const clearTestDb = async () => {
     await blogCollection.deleteMany({})
     await postCollection.deleteMany({})
     await userCollection.deleteMany({})
+    await commentCollection.deleteMany({})
     console.log('Local MongoDB is empty')
 }
 

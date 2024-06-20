@@ -1,9 +1,9 @@
-import { clearTestDb, closeTestDb, connectToTestDb } from "./mongo-datasets"
-import { req } from './test-helpers';
-import { SETTINGS } from '../src/settings'
+import { clearTestDb, closeTestDb, connectToTestDb } from "../mongo-datasets"
+import { req } from '../test-helpers';
+import { SETTINGS } from '../../src/settings'
 import { ObjectId } from "mongodb";
 import { createUser, createUsers } from "./utils/createUsers";
-import { CreateUserModel } from "../src/features/users/users-model/CreateUseerModel";
+import { CreateUserModel } from "../../src/features/users/users-model/CreateUseerModel";
 
 describe('/users', () => {
 
