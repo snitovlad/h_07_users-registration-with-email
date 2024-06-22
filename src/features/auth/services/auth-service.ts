@@ -10,6 +10,11 @@ import { nodemailerService } from "../../../common/adapters/email-adapter"
 import { emailTemplates } from "../../../common/email-templates/emailTemplates"
 import e from "express"
 
+function delay(ms: any) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+
 export const authService = {
 
     async registerUser(login: string, password: string, email: string): Promise<Result<string>> {
@@ -54,6 +59,8 @@ export const authService = {
         //мы не ждем когда письмо дойдет до пользователя, поэтому нет await
         //не await, поэтому результата не дожидаемся. try-catch теряет смысл. 
         //Можно .catch, т.к. приходит promise
+
+        await delay(5000);
 
         nodemailerService.sendEmail(  //не await, поэтому результата не дожидаемся. try-catch теряет смысл. Можно .catch
             newUser.email,
