@@ -1,0 +1,32 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Test E2E",
+            "type": "shell",
+            "command": "yarn jest:e2e",
+            "group": "test",
+            "problemMatcher": [
+                //"$ts-jest"
+            ]
+        },
+        {
+            "label": "Test Integration",
+            "type": "shell",
+            "command": "yarn jest:integration",
+            "group": "test",
+            "problemMatcher": [
+                //"$ts-jest"
+            ]
+        },
+        {
+            "label": "Test Unit",
+            "type": "shell",
+            "command": "yarn jest:unit",
+            "group": "test",
+            "problemMatcher": [
+                // "$ts-jest"
+            ]
+        }
+    ]
+}

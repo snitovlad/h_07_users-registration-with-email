@@ -1,0 +1,4 @@
+{
+    "jest.jestCommandLine": "yarn jest:e2e",
+    "jest.runMode": "watch"
+}

@@ -20,8 +20,8 @@
   "scripts": {
     "watch": "tsc -w",
     "dev": "yarn nodemon --inspect dist/index.js",
-    "jest": "jest -i -c jest.e2e.config.ts",
-    "test:integration": "jest -i -c jest.integration.config.ts",
+    "jest:e2e": "jest -i -c jest.e2e.config.ts",
+    "jest:integration": "jest -i -c jest.integration.config.ts",
     "jest:coverage": "jest -i --coverage"
   },
   "devDependencies": {

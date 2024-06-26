@@ -6,7 +6,6 @@ import { CreatePostModel } from '../../src/features/posts/models/CreatePostModel
 import { UpdatePostModel } from '../../src/features/posts/models/UpdatePostModel'
 
 
-
 describe('/posts', () => {
 
     beforeAll(async () => {
